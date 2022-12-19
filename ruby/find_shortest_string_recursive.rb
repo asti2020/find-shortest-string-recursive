@@ -1,5 +1,14 @@
 def find_shortest_string_recursive(arr)
   # type your code in here
+  arr.reduce do |shortest, string|
+  #   if string.length < shortest.length
+  #     string
+  #   else
+  #     shortest
+  #   end
+  # end
+  string.length < shortest.length ? string : shortest
+  end
 end
 
 if __FILE__ == $PROGRAM_NAME
